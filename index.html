@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="logo.png" type="image/png">
+	<title>AstroPredict - Predict your future</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<img src="logo.png" alt="Logo" id="logo">
+		<h4>AstroPredict</h4>
+	</header>
+
+	<div id="astrology">
+		<h1>Astrology Insights</h1>
+
+		<form>
+			<div class="div">
+			<input type="text" name="name" id="userName" placeholder="Enter your name" autofocus required>
+			</div>
+
+			<div class="div">
+			<input type="text" name="surName" id="userSurName" placeholder="Enter your surname" autofocus required>
+			</div>
+
+			<div class="div">
+			<input type="number" name="day" id="userDay" placeholder="Enter your birth day" autofocus required>
+			</div>
+
+			<div class="div">
+			<input type="number" name="month" id="userMonth" placeholder="Enter your birth month" autofocus required>
+			</div>
+
+			<div class="div">
+			<input type="number" name="year" id="userYear" placeholder="Enter your birth year" autofocus required>
+			</div>
+
+			<input type="submit" value="Get Insights" id="submit">
+		</form>
+
+		<div id="yourAstro">
+			<h3 id="uName" style="margin-bottom: 1rem;"></h3>
+			<ul>
+				<li>Zodiac Sign : <span id="zodiacSign"></span></li>
+				<li>Symbol : <span id="symbol"></span></li>
+				<li>Element : <span id="element"></span></li>
+				<li>Ruling Planet : <span id="rulingPlanet"></span></li>
+				<li>Traits : <span id="traits"></span></li>
+			</ul>
+			<p id="para" style="margin-top: 2rem; text-align: justify; font-weight:600;"></p>
+		</div>
+	</div>
+
+	<footer>
+		<h4 style="margin-bottom: 0.5rem;"> AstroPredict &copy; 2026.&nbsp;</h4>
+		<h4> All rights are reserved.</h4>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
